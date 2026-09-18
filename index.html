@@ -2,73 +2,84 @@
 <html lang="en">
 <head>
     <title>Registration For</title>
-
-
-<style>
-    form{
-        width: 300px;
-        background-color: rgb(247, 179, 101);
-        border: 1px solid rgb(186, 145, 69);
-        margin: 30px auto;
-    }
-</style>
 </head>
 
 <body>
+    <style>
+        .form-container {
+            width: 250px; 
+            background-color: rgb(153, 148, 151);
+            border: 1px solid rgb(137, 132, 140);
+            margin: 30px auto;
+            border-radius: 5px;
+            font-weight: 900;
+            padding: 20px;
+        }
 
-    <form action="/register" method="post">
-
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName">
-        <br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <br><br>
-
-        <label>Gender:</label>
-
-        <input type="radio" value="male" id="male" name="gender">
-        <label for="male">Male</label>
-
-        <input type="radio" value="female" id="female" name="gender">
-        <label for="female">Female</label>
-
-        <br><br>
-
-        <label for="date">Date:</label>
-        <input type="date">
-        <br><br>
+    </style>
 
 
-        <label for="file">upload file:</label>
-        <input type="file">
-
+    <form class="form-container"  action="/register" method="post">
         <br>
 
+        <label for="fullName">Full Name:</label>
+        <br>
+        <input type="text" id="fullName" name="fullName" required>
+        <br>
 
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
 
-        <label for ="branch">Branch:</label>
+        <br>
+        <label>Gender:</label>
+        <input type="radio" value="male" id="male" name="gender" required>
+        <label for="male">Male</label>
+        <input type="radio" value="female" id="female" name="gender">
+        <label for="female">Female</label>
+        <br>
+
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+
+        <br>
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+        <br>
+
+        <br>
+        <label for="branch">Branch:</label>
         <select name="branch" id="branch">
             <option value="cse">CSE</option>
             <option value="it">IT</option>
-            <option value="ece">ece</option>
+            <option value="ece">ECE</option>
         </select>
+        <br>
 
-        <br><br>
-        <label for="skills">Select Skills:</label>
+        <br>
+        <label>Select Skills:</label>
 
-        <input type="checkbox" id="java">
+        <input type="checkbox" id="java" name="skills" value="java">
         <label for="java">Java</label>
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        <label for="javascript">JavaScript</label>
+        <br>
 
-        <input type="checkbox" id="cpp">
-        <label for="cpp">C++</label>
-        <br> <br>
 
-    
+        <br>
+        <button type="submit">Register</button>
+        <br>
     </form>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.6344714971538!2d77.5945003746041!3d27.604859976241407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1787240127536!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ESnrn1kAD4E?si=aDI-IjIrJJtydOXK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.5887019612906!2d77.61179877526061!3d27.575272476258544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736d98dfe4cfd5%3A0x70de372d6558c765!2sKrishna%20Valley%20Wellness%20Resort%20Vrindavan!5e0!3m2!1sen!2sin!4v1787220059215!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ESnrn1kAD4E?si=aDI-IjIrJJtydOXK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </body>
 </html>
